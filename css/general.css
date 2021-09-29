@@ -27,6 +27,10 @@ body {
     max-width: 100vw;
 }
 
+strong {
+    font-weight: 500;
+}
+
 .heading-primary .heading-secondary .heading-tertiary {
     font-weight: 700;
     color: #333;
@@ -69,7 +73,7 @@ body {
     border-radius: 9px;
     text-decoration: none;
     display: inline-block;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s linear, box-shadow 0.3s linear;
 }
 
 .btn--outline:link,
@@ -95,6 +99,22 @@ body {
 .btn--full:active {
     color: #fff;
     background-color: #cf711f;
+}
+
+.link:link,
+.link:visited {
+    display: inline-block;
+    color: #e67e22;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 3px;
+    transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+    color: #cf711f;
+    border-bottom: 1px solid transparent;
 }
 
 .margin-right-sm {
@@ -123,4 +143,12 @@ body {
 
 .grid--center-v {
     align-items: center;
+}
+
+.margin--bottom-md {
+    margin-bottom: 4.8rem !important;
+}
+
+.center-text {
+    text-align: center;
 }
